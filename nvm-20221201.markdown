@@ -1,0 +1,55 @@
+# 20221201 工作筆記
+
+## nvm ( Node Version Management )
+
+下載 [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
+
+**指令列表**
+
+1. 安裝最新版本：
+   ```
+   nvm install latest
+   ```
+2. 安裝指定版本號（以版本號 11 為例）：
+   ```
+   nvm install 11
+   ```
+3. 使用指定版本好（以版本號 11 為例）：
+   ```
+   nvm use 11
+   ```
+
+## SSH Key
+
+> 包含一組公鑰 ( Public Key ) 和私鑰 ( Private Key )
+
+**指令列表**
+
+1. 設定 Client 端金鑰：
+   ```
+   ssh-keygen
+   ```
+2. 複製公鑰：
+   ```
+   pbcopy < ~/.ssh/id_rsa.pub
+   ```
+3. 複製私鑰：
+   ```
+   pbcopy < ~/.ssh/id_rsa
+   ```
+4. 查看 SSH Key
+   ```
+   pbcopy < ~/.ssh/id_rsa
+   ```
+   **參考文章**
+
+- [SSH 金鑰是什麼？私鑰與公鑰？如何自己產生一個 SSH 金鑰？](https://richarlin.tw/blog/linux-ssh_key/)
+- [SSH 金鑰：免密碼登入遠端主機、傳遞檔案](https://noob.tw/ssh-key/)
+
+## Markdown 語法
+
+[參考文章](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FBVqowKshRH246Q7UDyodFA?type=book)
