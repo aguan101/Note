@@ -53,3 +53,27 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 ## Markdown 語法
 
 [參考文章](https://hackmd.io/@eMP9zQQ0Qt6I8Uqp2Vqy6w/SyiOheL5N/%2FBVqowKshRH246Q7UDyodFA?type=book)
+
+## 三元多個條件串連
+
+> 三元運算子其實就是 if ...else 的簡寫，所以可以多個條件串聯在一起
+
+```javascript
+// 原本的寫法
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return 'a and b are equal'
+  } else if (a > b) {
+    return 'a is greater'
+  } else {
+    return 'b is greater'
+  }
+}
+```
+
+```javascript
+// 三元運算子的寫法
+function findGreaterOrEqual(a, b) {
+  return a === b ? 'a and b are equal' : a > b ? 'a is greater' : 'b is greater'
+}
+```
