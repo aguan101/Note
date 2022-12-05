@@ -1,4 +1,4 @@
-# 20221202 工作筆記
+# 20221205 工作筆記
 
 ## React Hooks
 
@@ -6,48 +6,25 @@
 
 If we need to add some to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function.
 
-### useState
+### useEffect
 
-#### 1. Declaring a State Variable
-
-> We declare a state variable called `count`,and set it to 0. React will remember its current value between re-renders, and provide the most recent one to our function. If we want to update the current `count`, we can call `setCount` function.
+> `useEffect` is a hook lets you synchronize a component with an external system.
 
 ```javascript
-import React, { useState } from 'react';
-
-function Example() {
-  // Declare a new state variable, which we'll call "count"
-  const [count, serCount] = useState(0);
-}
+useEffect(setup, dependencies?)
 ```
 
-- `useState` declares a "state variable". and it is a new way to use the exact same capabilities that `this.state` provides in a class.
+Usage
 
-- The only argument to the `useState()` Hook is the **_initial state_**. Unlike with classes, **_the state doesn't have to be an object._** We pass `0` as initial state for our variable.
-
-  > If we wanted to store two different values in state, we would call `useState()` twice.
-
-- `useState` returns a pair of values: **_the current state and a function that updates it._** So the example statement is similar to `this.state.count` and `this.setState` in a class component.
-
-#### 2. Reading State
-
-> Use the variable directly.
-
-```html
-<p>You clicked { count } times</p>
-```
-
-#### 3. Updating State
-
-> In a function component, we already have `setCount` and `count` as variables so we don't need `this`.
-
-```html
-<button onClick={ () => setCount(count+1)}>
-  Click me
-</button>
-```
-
-### useEffect(待補)
+- Connecting to an external system
+- Wrapping Effects in custom Hooks
+- Controlling a non-React widget
+- Fetching data with Effects
+- Specifying reactive dependencies
+- Updating state based on previous state from an Effect
+- Removing unnecessary object and function dependencies
+- Reading the latest props and state from an Effect
+- Displaying different content on the server and the client
 
 ### useRef(待補)
 
@@ -58,7 +35,3 @@ function Example() {
 - [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
 
 ---
-
-### 下週可研究項目
-
-1. [Debounce & Throttle ](https://medium.com/@alexian853/debounce-throttle-%E9%82%A3%E4%BA%9B%E5%89%8D%E7%AB%AF%E9%96%8B%E7%99%BC%E6%87%89%E8%A9%B2%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84%E5%B0%8F%E4%BA%8B-%E4%B8%80-76a73a8cbc39)
