@@ -1,0 +1,78 @@
+# 20221207 工作筆記
+
+## JavaScript Array
+
+### map()
+
+- 會透過函式 ( Function ) 內所回傳的值組合成一個新的陣列
+- 並不會改變原來的陣列
+- 回傳數量會等於原始陣列的長度
+
+  ```javascript
+  const newArr = arr.map(function (value, index, array) {
+    //...
+  });
+  ```
+
+範例
+
+1. Function 寫法
+
+   ```javascript
+   let A = [9000, 8500, 5500, 6500];
+   let B = A.map(function (value, index, array) {
+     return value * 2;
+   });
+
+   console.log(A); // [9000, 8500, 5500, 6500]
+   console.log(B); // [18000, 17000, 11000, 13000]
+   ```
+
+2. 箭頭函式 Arrow Function 寫法
+   ```javascript
+   let A = [9000, 8500, 5500, 6500];
+   let B = A.map((item) => item * 2);
+   console.log(B); // [18000, 17000, 11000, 13000]
+   ```
+
+### reduce()
+
+```javascript
+arr.reduce(function (accumulator, currentValue, currentIndex, array) {
+  //
+}, initialValue);
+```
+
+- `accumulator` : 累加器（必填）
+- `currentValue` : 當前元素（必填）
+- `currentIndex` : 當前元素的索引（選填）
+- `array` : 呼叫 `reduce`方法的陣列（選填）
+- `initialValue` : 第一次呼叫時要傳入的累加器初始值，若沒有提供初始值，則原陣列的第一個元素就會被當作初始的累加器（選填）
+
+---
+
+## JavaScript 內建函式
+
+### Math.max()
+
+> 從參數中找到最大值並回傳
+
+```javascript
+Math.max(1, 2, 3, 4); // 4
+```
+
+```javascript
+Math.max(1, 2, 3, 4); // 4
+
+const numbers = [1, 2, 3, 4];
+Math.max(...numbers); // 4
+```
+
+---
+
+### 參考文章
+
+- [Day13【ES6 小筆記】Array.map() - 處理陣列最佳選擇](https://ithelp.ithome.com.tw/articles/10215281)
+- [Day17【ES6 小筆記】Array.reduce() - 陣列累加 / 比大小 妙招](https://ithelp.ithome.com.tw/articles/10216565)
+- [從陣列計算最大和最小值](https://www.jstips.co/zh_tw/javascript/calculate-the-max-min-value-from-an-array/)
+- [MDN Web Docs - Math.max()](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Math/max)
