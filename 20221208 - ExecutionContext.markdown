@@ -1,13 +1,13 @@
 # 20221208 工作筆記
 
-## JavaScript Excution Context
+## JavaScript Execution Context
 
 > The most important and fundamental concept to understanding the JavaScipt language is understanding Execution Context.
 
 One strategy for writting software is to break our code up into separate pieces. Though these "pieces" have many different names( functions, modules, packages, etc ),they all exist for a single purpose - **_to break apart and manage the complexity in our applications._**
 Can we use that same strategy,separating code into pieces, to manage the complexity of interpreting code just like we did in order to write it? Turns out we can and these "pieces" are called Execution Contexts.**_Just like functions/modules/packages/allow you to manage the complexity of writing code, Excution Contexts allow the JavaScript engine to manage the complexity of interpreting and running your code._**
 
-### Global Excution Context
+### Global Execution Context
 
 > The first Execution Context that gets created when the JavaScript engine runs your code.
 
@@ -121,6 +121,8 @@ Inside of that `Closure Scope` is the same variable environment that existed in 
 ### 參考文章
 
 - [The Ultimate Guide to Hoisting, Scopes, and Closures in JavaScript](https://ui.dev/ultimate-guide-to-execution-contexts-hoisting-scopes-and-closures-in-javascript?spm=ata.13261165.0.0.2d8e16798YR8lw)
+
+- [Javascript 中的 Hoisting(提升)：幫你留位子](https://medium.com/itsems-frontend/javascript-hoisting-589488622dd7)
 
 ---
 

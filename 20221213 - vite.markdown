@@ -1,0 +1,57 @@
+# 20221213 工作筆記
+
+## Vite
+
+> Vite 是一個 build tool + dev server 的打包工具，跟 webpack 最大的差異是在於它提供了一個更快速的 dev server 讓我們在開發時能夠使用。
+
+### 為什麼 Vite 比較快？
+
+因為 webpack 需要 bundle ，可是 Vite 不需要，所以它不需要把你的 source code 全都包在一起，它只需要建立一個 local server ，讓你的 `import` 可以抓到正確的檔案就行了。少了打包，速度自然快很多，這也是 Native ESM 的威力。
+
+## HTTP Status Code
+
+常見狀態碼主要共分為五大類：
+
+1. 1XX - 資訊回應 ( informational message )
+2. 2XX - 成功回應
+3. 3XX - 重新導向
+4. 4XX - Client Side 錯誤
+5. 5XX - Server Side 錯誤
+
+下面是開發中常見的 Status Code
+
+- 200 OK - 回傳成功
+- 301 Moved Permanently - 已永久移動到新位置。
+- 302 Found（Moved Temporarily） - 暫時移到新位置。
+- 304 Not Modified - 內容和之前一樣，可以從快取拿就好。
+- 400 Bad Request - 明顯的用戶端錯誤，伺服器無法處理這個 Request。
+- 401 Unauthorized - 未認證，可能需要登入或 Token。
+- 403 Forbidden - 沒有權限。
+- 404 Not Found - 找不到資源或無效的 URL。
+- 500 Internal Server Error - 伺服器端錯誤。
+- 502 Bad Gateway - 通常是伺服器的某個服務沒有正確執行。
+- 503 Service Unavailable - 伺服器臨時維護或是快掛了，暫時無法處理請求。
+- 504 Gateway Timeout - 伺服器上的服務沒有回應。
+
+## What happens when you type a URL into your browser?
+
+1. DNS Lookup 域名解析
+2. 建立 TCP ( Transmission Control Protocol )連接
+3. 瀏覽器發起 HTTP(S) 請求
+4. 伺服器處理請求並返回
+5. 瀏覽器渲染頁面
+
+---
+
+### 參考文章
+
+- [Vite 怎麼能那麼快？從 ES modules 開始談起](https://blog.techbridge.cc/2020/08/07/vite-and-esmodules-snowpack/#post-comment-wrapper)
+- [常見與不常見的 HTTP Status Code](https://noob.tw/http-status-code/)
+- [經典前端面試題：從瀏覽器網址列輸入 URL 按下 enter 發生了什麼？](https://shubo.io/what-happens-when-you-type-a-url-in-the-browser-and-press-enter/#%E5%BB%BA%E7%AB%8B-tcp-%E9%80%A3%E6%8E%A5)
+- [What happens when you type a URL into your browser?](https://aws.amazon.com/tw/blogs/mobile/what-happens-when-you-type-a-url-into-your-browser/)
+- [從輸入網址列到渲染畫面，過程經歷了什麼事？](https://w3c.hexschool.com/blog/8d691e4f)
+- [淺談傳輸層協定（一）：TCP 在做什麼？](https://ithelp.ithome.com.tw/articles/10274640)
+
+---
+
+<!-- ### 明天可研究項目 -->
