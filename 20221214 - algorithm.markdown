@@ -94,6 +94,8 @@
 4. Array.prototype.join(separator)
 5. Array.prototype.includes(searchElement, fromIndex)
 
+![Array Methods](/img/ArrayMethods.png)
+
 ### 參考文章
 
 - [What's an algorithm?](https://www.youtube.com/watch?v=6hfOvs8pY1k)
