@@ -1,0 +1,28 @@
+# 20221216 工作筆記
+
+## 今日工作內容
+
+1. 新專案開發環境建立
+2. 關於我們頁面切版
+
+## 範例網頁參考
+
+- [Phyll](https://phyll.com/)
+  ![Phyll](/img/221216/Phyll.png)
+
+- [Otterverse](https://otterspace.xyz/)
+  ![Otterverse](/img/221216/Otterverse.png)
+
+- [poppr](https://www.poppr.be/en)
+  ![poppr](/img/221216/poppr.png)
+
+- [klub](https://klub.ki/en/)
+  ![klub](/img/221216/klub.png)
+
+- [Refokus](https://www.webflow-tools.refokus.com/)
+  ![Refokus](/img/221216/Refokus.png)
+
+- [IberianMedia](https://iberian.media/excellence)
+  ![IberianMedia](/img/221216/IberianMedia.png)
+
+---
