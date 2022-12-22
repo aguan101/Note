@@ -1,0 +1,21 @@
+# 20221222 工作筆記
+
+## 今日工作內容
+
+1. 首頁影片自動播放完成
+2. 首頁影片區塊 hover 自動播放功能
+3. 整合 RWD 所有設定
+
+## 相關資料
+
+### Video.js 自動播放
+
+- [Video.js Guides](https://videojs.com/guides/options/#autoplay)
+
+- [Video-JS autoplay attribute is not working [duplicate]](https://stackoverflow.com/questions/67942705/video-js-autoplay-attribute-is-not-working)
+
+- [How to use JavaScript to play a video on Mouse Hover and pause on Mouseout?](https://www.tutorialspoint.com/how-to-use-javascript-to-play-a-video-on-mouse-hover-and-pause-on-mouseout)
+
+- [HTML5 reset video and play again](https://stackoverflow.com/questions/16646648/html5-reset-video-and-play-again)
+
+---

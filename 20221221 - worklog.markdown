@@ -1,0 +1,22 @@
+# 20221221 工作筆記
+
+## 今日工作內容
+
+1. 首頁影片滑鼠效果完成
+2. 首頁水平滾動效果完成
+
+---
+
+## 相關資料
+
+### 水平滾動效果
+
+- [Horizontal Page](https://codepen.io/Marcos_Feijo/pen/LMNGBG)
+
+- [CSS Horizontal Page Scrolling | Wheel Only | Scrolljack](https://codepen.io/mlorberdev/pen/vYRLJgM?editors=1100)
+
+### 3D 滑鼠移動效果
+
+- [CSS Transform: Rotating a 3D object with perspective based on mouse position](https://armandocanals.com/posts/CSS-transform-rotating-a-3D-object-perspective-based-on-mouse-position.html)
+
+---
